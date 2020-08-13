@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "Analytics"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "YuktaMedia Analytics sdk for iOS."
   spec.description  = <<-DESC
 Analytics library is small light weight library which enable app developers to collect app usage analytics and send it to YuktaMedia, where app developers can see details in beautiful dashboard and can take action against any issues.
