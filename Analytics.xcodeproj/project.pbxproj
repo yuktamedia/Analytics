@@ -10,6 +10,60 @@
 		C9D5DFFB24D938FF007D245A /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D5DFF124D938FF007D245A /* Analytics.framework */; };
 		C9D5E00024D938FF007D245A /* AnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5DFFF24D938FF007D245A /* AnalyticsTests.m */; };
 		C9D5E00224D938FF007D245A /* Analytics.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5DFF424D938FF007D245A /* Analytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9D5E05724D940AF007D245A /* YMAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E05524D940AF007D245A /* YMAnalytics.h */; };
+		C9D5E05824D940AF007D245A /* YMAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E05624D940AF007D245A /* YMAnalytics.m */; };
+		C9D5E05B24D942A3007D245A /* YMIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E05A24D942A3007D245A /* YMIntegration.h */; };
+		C9D5E05E24D9435B007D245A /* YMAnalyticsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E05C24D9435B007D245A /* YMAnalyticsUtils.h */; };
+		C9D5E05F24D9435B007D245A /* YMAnalyticsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E05D24D9435B007D245A /* YMAnalyticsUtils.m */; };
+		C9D5E06224D944AC007D245A /* YMAnalyticsIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E06024D944AC007D245A /* YMAnalyticsIntegrationFactory.h */; };
+		C9D5E06324D944AC007D245A /* YMAnalyticsIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E06124D944AC007D245A /* YMAnalyticsIntegrationFactory.m */; };
+		C9D5E06624D9455A007D245A /* YMAnalyticsIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E06424D9455A007D245A /* YMAnalyticsIntegration.h */; };
+		C9D5E06724D9455A007D245A /* YMAnalyticsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E06524D9455A007D245A /* YMAnalyticsIntegration.m */; };
+		C9D5E06B24D9678F007D245A /* UIViewController+YMScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E06924D9678F007D245A /* UIViewController+YMScreen.h */; };
+		C9D5E06C24D9678F007D245A /* UIViewController+YMScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E06A24D9678F007D245A /* UIViewController+YMScreen.m */; };
+		C9D5E06E24D96884007D245A /* YMScreenReporting.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E06D24D96884007D245A /* YMScreenReporting.h */; };
+		C9D5E07124D96908007D245A /* NSViewController+YMScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E06F24D96908007D245A /* NSViewController+YMScreen.h */; };
+		C9D5E07224D96908007D245A /* NSViewController+YMScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E07024D96908007D245A /* NSViewController+YMScreen.m */; };
+		C9D5E0B724D9B958007D245A /* YMStoreKitTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0B524D9B958007D245A /* YMStoreKitTracker.h */; };
+		C9D5E0B824D9B958007D245A /* YMStoreKitTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0B624D9B958007D245A /* YMStoreKitTracker.m */; };
+		C9D5E0BE24D9BAD7007D245A /* YMHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0BC24D9BAD7007D245A /* YMHTTPClient.h */; };
+		C9D5E0BF24D9BAD7007D245A /* YMHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0BD24D9BAD7007D245A /* YMHTTPClient.m */; };
+		C9D5E0C124D9BB5A007D245A /* YMStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0C024D9BB5A007D245A /* YMStorage.h */; };
+		C9D5E0C324D9BBAB007D245A /* YMCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0C224D9BBAB007D245A /* YMCrypto.h */; };
+		C9D5E0C624D9BC01007D245A /* YMFileStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0C424D9BC01007D245A /* YMFileStorage.h */; };
+		C9D5E0C724D9BC01007D245A /* YMFileStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0C524D9BC01007D245A /* YMFileStorage.m */; };
+		C9D5E0CA24D9BC96007D245A /* YMUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0C824D9BC96007D245A /* YMUtils.h */; };
+		C9D5E0CB24D9BC96007D245A /* YMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0C924D9BC96007D245A /* YMUtils.m */; };
+		C9D5E0CE24D9BD26007D245A /* YMUserDefaultsStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0CC24D9BD26007D245A /* YMUserDefaultsStorage.h */; };
+		C9D5E0CF24D9BD26007D245A /* YMUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0CD24D9BD26007D245A /* YMUserDefaultsStorage.m */; };
+		C9D5E0D224D9BD95007D245A /* YMMiddleware.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0D024D9BD95007D245A /* YMMiddleware.h */; };
+		C9D5E0D324D9BD95007D245A /* YMMiddleware.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0D124D9BD95007D245A /* YMMiddleware.m */; };
+		C9D5E0D624D9BE43007D245A /* YMContext.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0D424D9BE43007D245A /* YMContext.h */; };
+		C9D5E0D724D9BE43007D245A /* YMContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0D524D9BE43007D245A /* YMContext.m */; };
+		C9D5E0DA24D9BEC4007D245A /* YMPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0D824D9BEC4007D245A /* YMPayload.h */; };
+		C9D5E0DB24D9BEC4007D245A /* YMPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0D924D9BEC4007D245A /* YMPayload.m */; };
+		C9D5E0DE24D9BF5D007D245A /* YMIntegrationsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0DC24D9BF5D007D245A /* YMIntegrationsManager.h */; };
+		C9D5E0DF24D9BF5D007D245A /* YMIntegrationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0DD24D9BF5D007D245A /* YMIntegrationsManager.m */; };
+		C9D5E0E224D9BFC7007D245A /* YMState.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0E024D9BFC7007D245A /* YMState.h */; };
+		C9D5E0E324D9BFC7007D245A /* YMState.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0E124D9BFC7007D245A /* YMState.m */; };
+		C9D5E0E624D9C0AE007D245A /* NSData+YMGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0E424D9C0AE007D245A /* NSData+YMGZIP.h */; };
+		C9D5E0E724D9C0AE007D245A /* NSData+YMGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0E524D9C0AE007D245A /* NSData+YMGZIP.m */; };
+		C9D5E0EA24D9C115007D245A /* YMAES256Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0E824D9C115007D245A /* YMAES256Crypto.h */; };
+		C9D5E0EB24D9C115007D245A /* YMAES256Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0E924D9C115007D245A /* YMAES256Crypto.m */; };
+		C9D5E0F124D9C2D6007D245A /* YMAliasPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0EF24D9C2D6007D245A /* YMAliasPayload.h */; };
+		C9D5E0F224D9C2D6007D245A /* YMAliasPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0F024D9C2D6007D245A /* YMAliasPayload.m */; };
+		C9D5E0F524D9C35A007D245A /* YMAnalyticsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0F324D9C35A007D245A /* YMAnalyticsConfiguration.h */; };
+		C9D5E0F624D9C35A007D245A /* YMAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0F424D9C35A007D245A /* YMAnalyticsConfiguration.m */; };
+		C9D5E0F924D9C3CA007D245A /* YMGroupPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0F724D9C3CA007D245A /* YMGroupPayload.h */; };
+		C9D5E0FA24D9C3CA007D245A /* YMGroupPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0F824D9C3CA007D245A /* YMGroupPayload.m */; };
+		C9D5E0FD24D9C42E007D245A /* YMIdentifyPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0FB24D9C42E007D245A /* YMIdentifyPayload.h */; };
+		C9D5E0FE24D9C42E007D245A /* YMIdentifyPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E0FC24D9C42E007D245A /* YMIdentifyPayload.m */; };
+		C9D5E10124D9C49A007D245A /* YMReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E0FF24D9C49A007D245A /* YMReachability.h */; };
+		C9D5E10224D9C49A007D245A /* YMReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E10024D9C49A007D245A /* YMReachability.m */; };
+		C9D5E10524D9C4F7007D245A /* YMScreenPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E10324D9C4F7007D245A /* YMScreenPayload.h */; };
+		C9D5E10624D9C4F7007D245A /* YMScreenPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E10424D9C4F7007D245A /* YMScreenPayload.m */; };
+		C9D5E10924D9C54C007D245A /* YMTrackPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D5E10724D9C54C007D245A /* YMTrackPayload.h */; };
+		C9D5E10A24D9C54C007D245A /* YMTrackPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D5E10824D9C54C007D245A /* YMTrackPayload.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +74,27 @@
 			remoteGlobalIDString = C9D5DFF024D938FE007D245A;
 			remoteInfo = Analytics;
 		};
+		C9EADC2024E5633B00C278D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9EADC1A24E5633A00C278D7 /* FirstApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9EADBE724E5633800C278D7;
+			remoteInfo = FirstApp;
+		};
+		C9EADC2224E5633B00C278D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9EADC1A24E5633A00C278D7 /* FirstApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9EADBFD24E5633A00C278D7;
+			remoteInfo = FirstAppTests;
+		};
+		C9EADC2424E5633B00C278D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9EADC1A24E5633A00C278D7 /* FirstApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9EADC0824E5633A00C278D7;
+			remoteInfo = FirstAppUITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +104,64 @@
 		C9D5DFFA24D938FF007D245A /* AnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D5DFFF24D938FF007D245A /* AnalyticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalyticsTests.m; sourceTree = "<group>"; };
 		C9D5E00124D938FF007D245A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D5E05524D940AF007D245A /* YMAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAnalytics.h; sourceTree = "<group>"; };
+		C9D5E05624D940AF007D245A /* YMAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAnalytics.m; sourceTree = "<group>"; };
+		C9D5E05924D941FB007D245A /* YMIntegrationFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMIntegrationFactory.h; sourceTree = "<group>"; };
+		C9D5E05A24D942A3007D245A /* YMIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMIntegration.h; sourceTree = "<group>"; };
+		C9D5E05C24D9435B007D245A /* YMAnalyticsUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAnalyticsUtils.h; sourceTree = "<group>"; };
+		C9D5E05D24D9435B007D245A /* YMAnalyticsUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAnalyticsUtils.m; sourceTree = "<group>"; };
+		C9D5E06024D944AC007D245A /* YMAnalyticsIntegrationFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAnalyticsIntegrationFactory.h; sourceTree = "<group>"; };
+		C9D5E06124D944AC007D245A /* YMAnalyticsIntegrationFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAnalyticsIntegrationFactory.m; sourceTree = "<group>"; };
+		C9D5E06424D9455A007D245A /* YMAnalyticsIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAnalyticsIntegration.h; sourceTree = "<group>"; };
+		C9D5E06524D9455A007D245A /* YMAnalyticsIntegration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAnalyticsIntegration.m; sourceTree = "<group>"; };
+		C9D5E06924D9678F007D245A /* UIViewController+YMScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YMScreen.h"; sourceTree = "<group>"; };
+		C9D5E06A24D9678F007D245A /* UIViewController+YMScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YMScreen.m"; sourceTree = "<group>"; };
+		C9D5E06D24D96884007D245A /* YMScreenReporting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMScreenReporting.h; sourceTree = "<group>"; };
+		C9D5E06F24D96908007D245A /* NSViewController+YMScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSViewController+YMScreen.h"; sourceTree = "<group>"; };
+		C9D5E07024D96908007D245A /* NSViewController+YMScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+YMScreen.m"; sourceTree = "<group>"; };
+		C9D5E0B524D9B958007D245A /* YMStoreKitTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMStoreKitTracker.h; sourceTree = "<group>"; };
+		C9D5E0B624D9B958007D245A /* YMStoreKitTracker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMStoreKitTracker.m; sourceTree = "<group>"; };
+		C9D5E0BC24D9BAD7007D245A /* YMHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMHTTPClient.h; sourceTree = "<group>"; };
+		C9D5E0BD24D9BAD7007D245A /* YMHTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMHTTPClient.m; sourceTree = "<group>"; };
+		C9D5E0C024D9BB5A007D245A /* YMStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMStorage.h; sourceTree = "<group>"; };
+		C9D5E0C224D9BBAB007D245A /* YMCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMCrypto.h; sourceTree = "<group>"; };
+		C9D5E0C424D9BC01007D245A /* YMFileStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMFileStorage.h; sourceTree = "<group>"; };
+		C9D5E0C524D9BC01007D245A /* YMFileStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMFileStorage.m; sourceTree = "<group>"; };
+		C9D5E0C824D9BC96007D245A /* YMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMUtils.h; sourceTree = "<group>"; };
+		C9D5E0C924D9BC96007D245A /* YMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMUtils.m; sourceTree = "<group>"; };
+		C9D5E0CC24D9BD26007D245A /* YMUserDefaultsStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMUserDefaultsStorage.h; sourceTree = "<group>"; };
+		C9D5E0CD24D9BD26007D245A /* YMUserDefaultsStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMUserDefaultsStorage.m; sourceTree = "<group>"; };
+		C9D5E0D024D9BD95007D245A /* YMMiddleware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMMiddleware.h; sourceTree = "<group>"; };
+		C9D5E0D124D9BD95007D245A /* YMMiddleware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMMiddleware.m; sourceTree = "<group>"; };
+		C9D5E0D424D9BE43007D245A /* YMContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMContext.h; sourceTree = "<group>"; };
+		C9D5E0D524D9BE43007D245A /* YMContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMContext.m; sourceTree = "<group>"; };
+		C9D5E0D824D9BEC4007D245A /* YMPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMPayload.h; sourceTree = "<group>"; };
+		C9D5E0D924D9BEC4007D245A /* YMPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMPayload.m; sourceTree = "<group>"; };
+		C9D5E0DC24D9BF5D007D245A /* YMIntegrationsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMIntegrationsManager.h; sourceTree = "<group>"; };
+		C9D5E0DD24D9BF5D007D245A /* YMIntegrationsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMIntegrationsManager.m; sourceTree = "<group>"; };
+		C9D5E0E024D9BFC7007D245A /* YMState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMState.h; sourceTree = "<group>"; };
+		C9D5E0E124D9BFC7007D245A /* YMState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMState.m; sourceTree = "<group>"; };
+		C9D5E0E424D9C0AE007D245A /* NSData+YMGZIP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+YMGZIP.h"; sourceTree = "<group>"; };
+		C9D5E0E524D9C0AE007D245A /* NSData+YMGZIP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+YMGZIP.m"; sourceTree = "<group>"; };
+		C9D5E0E824D9C115007D245A /* YMAES256Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAES256Crypto.h; sourceTree = "<group>"; };
+		C9D5E0E924D9C115007D245A /* YMAES256Crypto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAES256Crypto.m; sourceTree = "<group>"; };
+		C9D5E0EE24D9C1BA007D245A /* YMMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMMacros.h; sourceTree = "<group>"; };
+		C9D5E0EF24D9C2D6007D245A /* YMAliasPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAliasPayload.h; sourceTree = "<group>"; };
+		C9D5E0F024D9C2D6007D245A /* YMAliasPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAliasPayload.m; sourceTree = "<group>"; };
+		C9D5E0F324D9C35A007D245A /* YMAnalyticsConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		C9D5E0F424D9C35A007D245A /* YMAnalyticsConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAnalyticsConfiguration.m; sourceTree = "<group>"; };
+		C9D5E0F724D9C3CA007D245A /* YMGroupPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMGroupPayload.h; sourceTree = "<group>"; };
+		C9D5E0F824D9C3CA007D245A /* YMGroupPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMGroupPayload.m; sourceTree = "<group>"; };
+		C9D5E0FB24D9C42E007D245A /* YMIdentifyPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMIdentifyPayload.h; sourceTree = "<group>"; };
+		C9D5E0FC24D9C42E007D245A /* YMIdentifyPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMIdentifyPayload.m; sourceTree = "<group>"; };
+		C9D5E0FF24D9C49A007D245A /* YMReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMReachability.h; sourceTree = "<group>"; };
+		C9D5E10024D9C49A007D245A /* YMReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMReachability.m; sourceTree = "<group>"; };
+		C9D5E10324D9C4F7007D245A /* YMScreenPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMScreenPayload.h; sourceTree = "<group>"; };
+		C9D5E10424D9C4F7007D245A /* YMScreenPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMScreenPayload.m; sourceTree = "<group>"; };
+		C9D5E10724D9C54C007D245A /* YMTrackPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTrackPayload.h; sourceTree = "<group>"; };
+		C9D5E10824D9C54C007D245A /* YMTrackPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTrackPayload.m; sourceTree = "<group>"; };
+		C9D5E10B24D9C5B4007D245A /* YMSerializableValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMSerializableValue.h; sourceTree = "<group>"; };
+		C9EADC1A24E5633A00C278D7 /* FirstApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FirstApp.xcodeproj; path = ../FirstApp/FirstApp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +186,7 @@
 		C9D5DFE724D938FE007D245A = {
 			isa = PBXGroup;
 			children = (
+				C9EADC1A24E5633A00C278D7 /* FirstApp.xcodeproj */,
 				C9D5DFF324D938FF007D245A /* Analytics */,
 				C9D5DFFE24D938FF007D245A /* AnalyticsTests */,
 				C9D5DFF224D938FF007D245A /* Products */,
@@ -71,6 +205,8 @@
 		C9D5DFF324D938FF007D245A /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				C9D5E06824D9676D007D245A /* Internal */,
+				C9D5E05324D93D12007D245A /* Classes */,
 				C9D5DFF424D938FF007D245A /* Analytics.h */,
 				C9D5DFF524D938FF007D245A /* Info.plist */,
 			);
@@ -86,6 +222,87 @@
 			path = AnalyticsTests;
 			sourceTree = "<group>";
 		};
+		C9D5E05324D93D12007D245A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9D5E0EF24D9C2D6007D245A /* YMAliasPayload.h */,
+				C9D5E0F024D9C2D6007D245A /* YMAliasPayload.m */,
+				C9D5E05524D940AF007D245A /* YMAnalytics.h */,
+				C9D5E05624D940AF007D245A /* YMAnalytics.m */,
+				C9D5E0F324D9C35A007D245A /* YMAnalyticsConfiguration.h */,
+				C9D5E0F424D9C35A007D245A /* YMAnalyticsConfiguration.m */,
+				C9D5E06424D9455A007D245A /* YMAnalyticsIntegration.h */,
+				C9D5E06524D9455A007D245A /* YMAnalyticsIntegration.m */,
+				C9D5E06024D944AC007D245A /* YMAnalyticsIntegrationFactory.h */,
+				C9D5E06124D944AC007D245A /* YMAnalyticsIntegrationFactory.m */,
+				C9D5E05C24D9435B007D245A /* YMAnalyticsUtils.h */,
+				C9D5E05D24D9435B007D245A /* YMAnalyticsUtils.m */,
+				C9D5E0D424D9BE43007D245A /* YMContext.h */,
+				C9D5E0D524D9BE43007D245A /* YMContext.m */,
+				C9D5E0C224D9BBAB007D245A /* YMCrypto.h */,
+				C9D5E0F724D9C3CA007D245A /* YMGroupPayload.h */,
+				C9D5E0F824D9C3CA007D245A /* YMGroupPayload.m */,
+				C9D5E0BC24D9BAD7007D245A /* YMHTTPClient.h */,
+				C9D5E0BD24D9BAD7007D245A /* YMHTTPClient.m */,
+				C9D5E0FB24D9C42E007D245A /* YMIdentifyPayload.h */,
+				C9D5E0FC24D9C42E007D245A /* YMIdentifyPayload.m */,
+				C9D5E05A24D942A3007D245A /* YMIntegration.h */,
+				C9D5E05924D941FB007D245A /* YMIntegrationFactory.h */,
+				C9D5E0D024D9BD95007D245A /* YMMiddleware.h */,
+				C9D5E0D124D9BD95007D245A /* YMMiddleware.m */,
+				C9D5E0D824D9BEC4007D245A /* YMPayload.h */,
+				C9D5E0D924D9BEC4007D245A /* YMPayload.m */,
+				C9D5E0FF24D9C49A007D245A /* YMReachability.h */,
+				C9D5E10024D9C49A007D245A /* YMReachability.m */,
+				C9D5E10324D9C4F7007D245A /* YMScreenPayload.h */,
+				C9D5E10424D9C4F7007D245A /* YMScreenPayload.m */,
+				C9D5E06D24D96884007D245A /* YMScreenReporting.h */,
+				C9D5E0C024D9BB5A007D245A /* YMStorage.h */,
+				C9D5E10724D9C54C007D245A /* YMTrackPayload.h */,
+				C9D5E10824D9C54C007D245A /* YMTrackPayload.m */,
+				C9D5E10B24D9C5B4007D245A /* YMSerializableValue.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C9D5E06824D9676D007D245A /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				C9D5E0E424D9C0AE007D245A /* NSData+YMGZIP.h */,
+				C9D5E0E524D9C0AE007D245A /* NSData+YMGZIP.m */,
+				C9D5E06F24D96908007D245A /* NSViewController+YMScreen.h */,
+				C9D5E07024D96908007D245A /* NSViewController+YMScreen.m */,
+				C9D5E06924D9678F007D245A /* UIViewController+YMScreen.h */,
+				C9D5E06A24D9678F007D245A /* UIViewController+YMScreen.m */,
+				C9D5E0E824D9C115007D245A /* YMAES256Crypto.h */,
+				C9D5E0E924D9C115007D245A /* YMAES256Crypto.m */,
+				C9D5E0C424D9BC01007D245A /* YMFileStorage.h */,
+				C9D5E0C524D9BC01007D245A /* YMFileStorage.m */,
+				C9D5E0DC24D9BF5D007D245A /* YMIntegrationsManager.h */,
+				C9D5E0DD24D9BF5D007D245A /* YMIntegrationsManager.m */,
+				C9D5E0EE24D9C1BA007D245A /* YMMacros.h */,
+				C9D5E0E024D9BFC7007D245A /* YMState.h */,
+				C9D5E0E124D9BFC7007D245A /* YMState.m */,
+				C9D5E0B524D9B958007D245A /* YMStoreKitTracker.h */,
+				C9D5E0B624D9B958007D245A /* YMStoreKitTracker.m */,
+				C9D5E0CC24D9BD26007D245A /* YMUserDefaultsStorage.h */,
+				C9D5E0CD24D9BD26007D245A /* YMUserDefaultsStorage.m */,
+				C9D5E0C824D9BC96007D245A /* YMUtils.h */,
+				C9D5E0C924D9BC96007D245A /* YMUtils.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		C9EADC1B24E5633A00C278D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9EADC2124E5633B00C278D7 /* FirstApp.app */,
+				C9EADC2324E5633B00C278D7 /* FirstAppTests.xctest */,
+				C9EADC2524E5633B00C278D7 /* FirstAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +310,36 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D5E0B724D9B958007D245A /* YMStoreKitTracker.h in Headers */,
+				C9D5E06224D944AC007D245A /* YMAnalyticsIntegrationFactory.h in Headers */,
+				C9D5E0FD24D9C42E007D245A /* YMIdentifyPayload.h in Headers */,
+				C9D5E0F524D9C35A007D245A /* YMAnalyticsConfiguration.h in Headers */,
+				C9D5E06E24D96884007D245A /* YMScreenReporting.h in Headers */,
 				C9D5E00224D938FF007D245A /* Analytics.h in Headers */,
+				C9D5E0DA24D9BEC4007D245A /* YMPayload.h in Headers */,
+				C9D5E05724D940AF007D245A /* YMAnalytics.h in Headers */,
+				C9D5E05B24D942A3007D245A /* YMIntegration.h in Headers */,
+				C9D5E10524D9C4F7007D245A /* YMScreenPayload.h in Headers */,
+				C9D5E0EA24D9C115007D245A /* YMAES256Crypto.h in Headers */,
+				C9D5E0C624D9BC01007D245A /* YMFileStorage.h in Headers */,
+				C9D5E0E224D9BFC7007D245A /* YMState.h in Headers */,
+				C9D5E07124D96908007D245A /* NSViewController+YMScreen.h in Headers */,
+				C9D5E06624D9455A007D245A /* YMAnalyticsIntegration.h in Headers */,
+				C9D5E0C324D9BBAB007D245A /* YMCrypto.h in Headers */,
+				C9D5E0D624D9BE43007D245A /* YMContext.h in Headers */,
+				C9D5E0D224D9BD95007D245A /* YMMiddleware.h in Headers */,
+				C9D5E0C124D9BB5A007D245A /* YMStorage.h in Headers */,
+				C9D5E0F124D9C2D6007D245A /* YMAliasPayload.h in Headers */,
+				C9D5E0CA24D9BC96007D245A /* YMUtils.h in Headers */,
+				C9D5E05E24D9435B007D245A /* YMAnalyticsUtils.h in Headers */,
+				C9D5E0BE24D9BAD7007D245A /* YMHTTPClient.h in Headers */,
+				C9D5E10924D9C54C007D245A /* YMTrackPayload.h in Headers */,
+				C9D5E0F924D9C3CA007D245A /* YMGroupPayload.h in Headers */,
+				C9D5E0DE24D9BF5D007D245A /* YMIntegrationsManager.h in Headers */,
+				C9D5E06B24D9678F007D245A /* UIViewController+YMScreen.h in Headers */,
+				C9D5E10124D9C49A007D245A /* YMReachability.h in Headers */,
+				C9D5E0CE24D9BD26007D245A /* YMUserDefaultsStorage.h in Headers */,
+				C9D5E0E624D9C0AE007D245A /* NSData+YMGZIP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +409,12 @@
 			mainGroup = C9D5DFE724D938FE007D245A;
 			productRefGroup = C9D5DFF224D938FF007D245A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C9EADC1B24E5633A00C278D7 /* Products */;
+					ProjectRef = C9EADC1A24E5633A00C278D7 /* FirstApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C9D5DFF024D938FE007D245A /* Analytics */,
@@ -170,6 +422,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C9EADC2124E5633B00C278D7 /* FirstApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = FirstApp.app;
+			remoteRef = C9EADC2024E5633B00C278D7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9EADC2324E5633B00C278D7 /* FirstAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FirstAppTests.xctest;
+			remoteRef = C9EADC2224E5633B00C278D7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9EADC2524E5633B00C278D7 /* FirstAppUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FirstAppUITests.xctest;
+			remoteRef = C9EADC2424E5633B00C278D7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C9D5DFEF24D938FE007D245A /* Resources */ = {
@@ -193,6 +469,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D5E06C24D9678F007D245A /* UIViewController+YMScreen.m in Sources */,
+				C9D5E0FA24D9C3CA007D245A /* YMGroupPayload.m in Sources */,
+				C9D5E0CB24D9BC96007D245A /* YMUtils.m in Sources */,
+				C9D5E06324D944AC007D245A /* YMAnalyticsIntegrationFactory.m in Sources */,
+				C9D5E10624D9C4F7007D245A /* YMScreenPayload.m in Sources */,
+				C9D5E06724D9455A007D245A /* YMAnalyticsIntegration.m in Sources */,
+				C9D5E0E724D9C0AE007D245A /* NSData+YMGZIP.m in Sources */,
+				C9D5E0FE24D9C42E007D245A /* YMIdentifyPayload.m in Sources */,
+				C9D5E0DB24D9BEC4007D245A /* YMPayload.m in Sources */,
+				C9D5E0D724D9BE43007D245A /* YMContext.m in Sources */,
+				C9D5E0F624D9C35A007D245A /* YMAnalyticsConfiguration.m in Sources */,
+				C9D5E05F24D9435B007D245A /* YMAnalyticsUtils.m in Sources */,
+				C9D5E0CF24D9BD26007D245A /* YMUserDefaultsStorage.m in Sources */,
+				C9D5E0B824D9B958007D245A /* YMStoreKitTracker.m in Sources */,
+				C9D5E10224D9C49A007D245A /* YMReachability.m in Sources */,
+				C9D5E0EB24D9C115007D245A /* YMAES256Crypto.m in Sources */,
+				C9D5E05824D940AF007D245A /* YMAnalytics.m in Sources */,
+				C9D5E0C724D9BC01007D245A /* YMFileStorage.m in Sources */,
+				C9D5E0F224D9C2D6007D245A /* YMAliasPayload.m in Sources */,
+				C9D5E0E324D9BFC7007D245A /* YMState.m in Sources */,
+				C9D5E0D324D9BD95007D245A /* YMMiddleware.m in Sources */,
+				C9D5E0DF24D9BF5D007D245A /* YMIntegrationsManager.m in Sources */,
+				C9D5E0BF24D9BAD7007D245A /* YMHTTPClient.m in Sources */,
+				C9D5E10A24D9C54C007D245A /* YMTrackPayload.m in Sources */,
+				C9D5E07224D96908007D245A /* NSViewController+YMScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

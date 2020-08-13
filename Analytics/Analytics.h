@@ -15,4 +15,10 @@ FOUNDATION_EXPORT const unsigned char AnalyticsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Analytics/PublicHeader.h>
 
-
+#import "YMAnalytics.h"
+#import "YMAnalyticsIntegration.h"
+#import "YMAnalyticsIntegrationFactory.h"
+#import "YMContext.h"
+#import "YMMiddleware.h"
+#import "YMScreenReporting.h"
+#import "YMAnalyticsUtils.h"
