@@ -205,10 +205,9 @@
 		C9D5DFF324D938FF007D245A /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				C9D5E06824D9676D007D245A /* Internal */,
-				C9D5E05324D93D12007D245A /* Classes */,
-				C9D5DFF424D938FF007D245A /* Analytics.h */,
 				C9D5DFF524D938FF007D245A /* Info.plist */,
+				C9D5E05324D93D12007D245A /* Classes */,
+				C9D5E06824D9676D007D245A /* Internal */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -225,6 +224,7 @@
 		C9D5E05324D93D12007D245A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9D5DFF424D938FF007D245A /* Analytics.h */,
 				C9D5E0EF24D9C2D6007D245A /* YMAliasPayload.h */,
 				C9D5E0F024D9C2D6007D245A /* YMAliasPayload.m */,
 				C9D5E05524D940AF007D245A /* YMAnalytics.h */,
