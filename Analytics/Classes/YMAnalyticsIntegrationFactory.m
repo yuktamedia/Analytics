@@ -27,7 +27,7 @@
 
 - (NSString *)key
 {
-    return @"Analytics.io";
+    return @"YuktaOne.io";
 }
 
 @end

@@ -74,7 +74,7 @@ NSString *const kYMTraitsFilename = @"yuktaoneio.traits.plist";
         self.httpClient.httpSessionDelegate = analytics.configuration.httpSessionDelegate;
         self.fileStorage = fileStorage;
         self.userDefaultsStorage = userDefaultsStorage;
-        self.apiURL = [YUKTAMEDIA_API_BASE URLByAppendingPathComponent:@"import"];
+        self.apiURL = [YUKTAMEDIA_API_BASE URLByAppendingPathComponent:@"datasync-android"];
         self.reachability = [YMReachability reachabilityWithHostname:@"google.com"];
         [self.reachability startNotifier];
         self.serialQueue = ym_dispatch_queue_create_specific("io.yuktaone.analytics.yuktaoneio", DISPATCH_QUEUE_SERIAL);
@@ -268,7 +268,7 @@ NSString *const kYMTraitsFilename = @"yuktaoneio.traits.plist";
     NSMutableDictionary *dict = [integrations ?: @{} mutableCopy];
     for (NSString *integration in self.analytics.bundledIntegrations) {
         // Don't record Analytics.io in the dictionary. It is always enabled.
-        if ([integration isEqualToString:@"Analytics.io"]) {
+        if ([integration isEqualToString:@"YuktaOne.io"]) {
             continue;
         }
         dict[integration] = @NO;

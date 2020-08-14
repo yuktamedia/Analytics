@@ -22,9 +22,7 @@ static const NSUInteger kMaxBatchSize = 475000; // 475KB
 
 + (NSString *)authorizationHeader:(NSString *)writeKey
 {
-    NSString *rawHeader = [writeKey stringByAppendingString:@":"];
-    NSData *userPasswordData = [rawHeader dataUsingEncoding:NSUTF8StringEncoding];
-    return [userPasswordData base64EncodedStringWithOptions:0];
+    return [NSString stringWithFormat:@"Bearer %@", writeKey];
 }
 
 
@@ -56,7 +54,7 @@ static const NSUInteger kMaxBatchSize = 475000; // 475KB
             @"Accept-Encoding" : @"gzip",
             @"Content-Encoding" : @"gzip",
             @"Content-Type" : @"application/json",
-            @"Authorization" : [@"Basic " stringByAppendingString:[[self class] authorizationHeader:writeKey]],
+            @"Authorization" : [[self class] authorizationHeader:writeKey],
             @"User-Agent" : [NSString stringWithFormat:@"analytics-ios/%@", [YMAnalytics version]],
         };
         session = [NSURLSession sessionWithConfiguration:config delegate:self.httpSessionDelegate delegateQueue:NULL];
@@ -79,7 +77,7 @@ static const NSUInteger kMaxBatchSize = 475000; // 475KB
     //    batch = YMCoerceDictionary(batch);
     NSURLSession *session = [self sessionForWriteKey:writeKey];
 
-    NSURL *url = [YUKTAMEDIA_API_BASE URLByAppendingPathComponent:@"batch"];
+    NSURL *url = [YUKTAMEDIA_API_BASE URLByAppendingPathComponent:@"/datasync-android"];
     NSMutableURLRequest *request = self.requestFactory(url);
 
     // This is a workaround for an IOS 8.3 bug that causes Content-Type to be incorrectly set
@@ -153,7 +151,7 @@ static const NSUInteger kMaxBatchSize = 475000; // 475KB
 {
     NSURLSession *session = self.genericSession;
 
-    NSURL *url = [YUKTAMEDIA_CDN_BASE URLByAppendingPathComponent:[NSString stringWithFormat:@"/projects/%@/settings", writeKey]];
+    NSURL *url = [YUKTAMEDIA_CDN_BASE URLByAppendingPathComponent:[NSString stringWithFormat:@"/projects/settings?key=%@", writeKey]];
     NSMutableURLRequest *request = self.requestFactory(url);
     [request setHTTPMethod:@"GET"];
 
