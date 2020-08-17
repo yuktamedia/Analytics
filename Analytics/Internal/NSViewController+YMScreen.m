@@ -48,14 +48,14 @@ NSDate *activityUnloadTime;
     });
 }
 
-+ (void)ym_swizzleViewDidDisappear
++ (void)ym_swizzleViewWillDisappear
 {
     static dispatch_once_t oncedisToken;
     dispatch_once(&oncedisToken, ^{
         Class class = [self class];
 
-        SEL originalSelector = @selector(viewDidDisappear:);
-        SEL swizzledSelector = @selector(ym_viewDidDisappear:);
+        SEL originalSelector = @selector(viewWillDisappear:);
+        SEL swizzledSelector = @selector(ym_viewWillDisappear:);
 
         Method originalMethod = class_getInstanceMethod(class, originalSelector);
         Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
@@ -135,7 +135,7 @@ NSDate *activityUnloadTime;
     [self ym_viewDidAppear:animated];
 }
 
-- (void)ym_viewDidDisappear:(BOOL)animated
+- (void)ym_viewWillDisappear:(BOOL)animated
 {
     NSViewController *top = [[self class] ym_rootViewControllerFromView:self.view];
     if (!top) {
@@ -163,7 +163,7 @@ NSDate *activityUnloadTime;
         @"activityName" : name
     }];
 
-    [self ym_viewDidDisappear:animated];
+    [self ym_viewWillDisappear:animated];
 }
 @end
 #endif
