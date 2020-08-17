@@ -42,8 +42,8 @@ NSDate *activityUnloadTime;
 
 + (void)ym_swizzleViewDidDisappear
 {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
+    static dispatch_once_t oncedisToken;
+    dispatch_once(&oncedisToken, ^{
         Class class = [self class];
 
         SEL originalSelector = @selector(viewDidDisappear:);
