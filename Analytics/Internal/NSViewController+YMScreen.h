@@ -15,6 +15,7 @@
 @interface NSViewController (YMScreen)
 
 + (void)ym_swizzleViewDidAppear;
++ (void)ym_swizzleViewDidDisappear;
 + (NSViewController *)ym_rootViewControllerFromView:(NSView *)view;
 
 @end

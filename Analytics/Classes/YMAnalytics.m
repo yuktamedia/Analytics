@@ -66,7 +66,7 @@ static YMAnalytics *__sharedInstance = nil;
         // Pass through for application state change events
         id<YMApplicationProtocol> application = configuration.application;
         if (application) {
-#if TARGET_OS_IPHONE
+            #if TARGET_OS_IPHONE
             // Attach to application state change hooks
             NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
             for (NSString *name in @[ UIApplicationDidEnterBackgroundNotification,
@@ -77,7 +77,7 @@ static YMAnalytics *__sharedInstance = nil;
                                       UIApplicationDidBecomeActiveNotification ]) {
                 [nc addObserver:self selector:@selector(handleAppStateNotification:) name:name object:application];
             }
-#elif TARGET_OS_OSX
+            #elif TARGET_OS_OSX
             // Attach to application state change hooks
             NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
             for (NSString *name in @[ NSApplicationWillUnhideNotification,
@@ -88,34 +88,34 @@ static YMAnalytics *__sharedInstance = nil;
                                       NSApplicationWillTerminateNotification]) {
                 [nc addObserver:self selector:@selector(handleAppStateNotification:) name:name object:application];
             }
-#endif
+            #endif
         }
 
-#if TARGET_OS_IPHONE
+        #if TARGET_OS_IPHONE
         if (configuration.recordScreenViews) {
             [UIViewController ym_swizzleViewDidAppear];
         }
-#elif TARGET_OS_OSX
+        #elif TARGET_OS_OSX
         if (configuration.recordScreenViews) {
             [NSViewController ym_swizzleViewDidAppear];
         }
-#endif
+        #endif
         if (configuration.trackInAppPurchases) {
             _storeKitTracker = [YMStoreKitTracker trackTransactionsForAnalytics:self];
         }
 
-#if !TARGET_OS_TV
+        #if !TARGET_OS_TV
         if (configuration.trackPushNotifications && configuration.launchOptions) {
-#if TARGET_OS_IOS
+        #if TARGET_OS_IOS
             NSDictionary *remoteNotification = configuration.launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
-#else
+        #else
             NSDictionary *remoteNotification = configuration.launchOptions[NSApplicationLaunchUserNotificationKey];
-#endif
+        #endif
             if (remoteNotification) {
                 [self trackPushNotification:remoteNotification fromLaunch:YES];
             }
         }
-#endif
+        #endif
         
         [YMState sharedInstance].configuration = configuration;
         [[YMState sharedInstance].context updateStaticContext];
@@ -199,7 +199,7 @@ NSString *const YMBuildKeyV2 = @"YMBuildKeyV2";
         }];
     }
 
-#if TARGET_OS_IPHONE
+    #if TARGET_OS_IPHONE
     [self track:@"Application Opened" properties:@{
         @"from_background" : @NO,
         @"version" : currentVersion ?: @"",
@@ -207,14 +207,14 @@ NSString *const YMBuildKeyV2 = @"YMBuildKeyV2";
         @"referring_application" : launchOptions[UIApplicationLaunchOptionsSourceApplicationKey] ?: @"",
         @"url" : launchOptions[UIApplicationLaunchOptionsURLKey] ?: @"",
     }];
-#elif TARGET_OS_OSX
+    #elif TARGET_OS_OSX
     [self track:@"Application Opened" properties:@{
         @"from_background" : @NO,
         @"version" : currentVersion ?: @"",
         @"build" : currentBuild ?: @"",
         @"default_launch" : launchOptions[NSApplicationLaunchIsDefaultLaunchKey] ?: @(YES),
     }];
-#endif
+    #endif
 
 
     [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:YMVersionKey];
