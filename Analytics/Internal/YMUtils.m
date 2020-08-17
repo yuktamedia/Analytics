@@ -173,11 +173,13 @@ NSDictionary *getStaticContext(YMAnalyticsConfiguration *configuration, NSString
         };
     }
 
-#if TARGET_OS_IPHONE
-    dict[@"device"] = mobileSpecifications(configuration, deviceToken);
-#elif TARGET_OS_OSX
-    dict[@"device"] = desktopSpecifications(configuration, deviceToken);
-#endif
+    #if TARGET_OS_IPHONE
+        [dict addEntriesFromDictionary:mobileSpecifications(configuration, deviceToken)];
+        // dict[@"device"] = mobileSpecifications(configuration, deviceToken);
+    #elif TARGET_OS_OSX
+        [dict addEntriesFromDictionary:desktopSpecifications(configuration, deviceToken)];
+        // dict[@"device"] = desktopSpecifications(configuration, deviceToken);
+    #endif
 
     return dict;
 }
@@ -190,13 +192,13 @@ NSDictionary *mobileSpecifications(YMAnalyticsConfiguration *configuration, NSSt
     dict[@"device"] = ({
         NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
         dict[@"manufacturer"] = @"Apple";
-#if TARGET_OS_MACCATALYST
-        dict[@"type"] = @"macos";
-        dict[@"name"] = @"Macintosh";
-#else
-        dict[@"type"] = @"ios";
-        dict[@"name"] = [device model];
-#endif
+        #if TARGET_OS_MACCATALYST
+            dict[@"type"] = @"macos";
+            dict[@"name"] = @"Macintosh";
+        #else
+            dict[@"type"] = @"ios";
+            dict[@"name"] = [device model];
+        #endif
         dict[@"model"] = getDeviceModel();
         dict[@"id"] = [[device identifierForVendor] UUIDString];
         if (getAdTrackingEnabled(configuration)) {
@@ -331,16 +333,16 @@ NSDictionary *getLiveContext(YMReachability *reachability, NSDictionary *referre
             network[@"cellular"] = @(reachability.isReachableViaWWAN);
         }
 
-#if TARGET_OS_IOS && TARGET_OS_MACCATALYST == 0
-        static dispatch_once_t networkInfoOnceToken;
-        dispatch_once(&networkInfoOnceToken, ^{
-            _telephonyNetworkInfo = [[CTTelephonyNetworkInfo alloc] init];
-        });
+        #if TARGET_OS_IOS && TARGET_OS_MACCATALYST == 0
+            static dispatch_once_t networkInfoOnceToken;
+            dispatch_once(&networkInfoOnceToken, ^{
+                _telephonyNetworkInfo = [[CTTelephonyNetworkInfo alloc] init];
+            });
 
-        CTCarrier *carrier = [_telephonyNetworkInfo subscriberCellularProvider];
-        if (carrier.carrierName.length)
-            network[@"carrier"] = carrier.carrierName;
-#endif
+            CTCarrier *carrier = [_telephonyNetworkInfo subscriberCellularProvider];
+            if (carrier.carrierName.length)
+                network[@"carrier"] = carrier.carrierName;
+        #endif
 
         network;
     });

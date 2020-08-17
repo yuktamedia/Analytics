@@ -15,6 +15,7 @@ NS_SWIFT_NAME(Payload)
 
 @property (nonatomic, readonly) JSON_DICT context;
 @property (nonatomic, readonly) JSON_DICT integrations;
+@property (nonatomic, readonly) NSString *channel;
 @property (nonatomic, strong) NSString *timestamp;
 @property (nonatomic, strong) NSString *messageId;
 @property (nonatomic, strong) NSString *anonymousId;

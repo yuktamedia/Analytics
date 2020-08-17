@@ -25,6 +25,7 @@
 
         _context = [combinedContext copy];
         _integrations = [integrations copy];
+        _channel = @"mobile";
         _messageId = nil;
         _userId = nil;
         _anonymousId = nil;
