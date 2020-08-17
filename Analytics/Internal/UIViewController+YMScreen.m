@@ -45,6 +45,8 @@ NSDate *activityUnloadTime;
     static dispatch_once_t oncedisToken;
     dispatch_once(&oncedisToken, ^{
         Class class = [self class];
+        
+        NSLog(@"in ui view did disappear method to attach event");
 
         SEL originalSelector = @selector(viewDidDisappear:);
         SEL swizzledSelector = @selector(ym_viewDidDisappear:);
@@ -161,6 +163,7 @@ NSDate *activityUnloadTime;
 
 - (void)ym_viewDidDisappear:(BOOL)animated
 {
+    NSLog(@"in ui view did disappear method to fire event");
     UIViewController *top = [[self class] ym_rootViewControllerFromView:self.view];
     if (!top) {
         YMLog(@"Could not infer screen.");
