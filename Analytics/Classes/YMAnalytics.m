@@ -95,10 +95,12 @@ static YMAnalytics *__sharedInstance = nil;
         if (configuration.recordScreenViews) {
             [UIViewController ym_swizzleViewDidAppear];
         }
+        [UIViewController ym_swizzleViewDidDisappear];
         #elif TARGET_OS_OSX
         if (configuration.recordScreenViews) {
             [NSViewController ym_swizzleViewDidAppear];
         }
+        [NSViewController ym_swizzleViewDidDisappear];
         #endif
         if (configuration.trackInAppPurchases) {
             _storeKitTracker = [YMStoreKitTracker trackTransactionsForAnalytics:self];
@@ -531,7 +533,7 @@ NSString *const YMBuildKeyV2 = @"YMBuildKeyV2";
 {
     // this has to match the actual version, NOT what's in info.plist
     // because Apple only accepts X.X.X as versions in the review process.
-    return @"4.0.4";
+    return @"1.0.5";
 }
 
 #pragma mark - Helpers
