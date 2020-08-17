@@ -533,7 +533,7 @@ NSString *const YMBuildKeyV2 = @"YMBuildKeyV2";
 {
     // this has to match the actual version, NOT what's in info.plist
     // because Apple only accepts X.X.X as versions in the review process.
-    return @"1.0.5";
+    return @"1.0.7";
 }
 
 #pragma mark - Helpers
